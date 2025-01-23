@@ -25,6 +25,19 @@ ul {
     background-color: #333;
 }
 
+#nav {
+    display:flex;
+    justify-content:center;
+}
+
+.navlink {
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin:10px;
+    text-align:center;
+    background-color:red;
+}
 li {
     float: left;
 }
