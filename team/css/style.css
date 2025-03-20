@@ -26,6 +26,7 @@ h3 {
     margin: auto;
     padding: 10px 14px;
     background-color: white;
+    min-height: 100vh;
 }
 
 .centered-text {
