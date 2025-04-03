@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--
+Development Plan for our project (final delivery)
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Revised Development Plan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navigation-bar">
+        <div class="margin-five">
+            <div class="navigation-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="showcase.html">Showcase</a></li>
+                    <li style="float:right"><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <div class="centered-text">
+            <h1>Revised Development Plan</h1>
+        </div>
+        <div id="content" class="margin-five">
+            <p class="blue">Note: revisions made for the final delivery are indicated in blue.</p>
+            <div>
+                <strong>Names:</strong></br>
+                <ul>
+                    <li>Team name: Brick Plug</li>
+                    <li>Members: Logan Lau-McLennan, Brian Nguyen, Abigail Fong, Aleina Biju</li>
+                    <li>Client: Peter @ Gallery Inprint</li>
+                    <li>App name: Gallery Inprint Website</li>
+                </ul>
+                </br></br>
+
+            </div>
+
+            <div>
+                <strong>Purpose:</strong></br>
+                To display photography in a gallery and provide information about product specifications, services
+                offered, and contact info for the business. Another feature is for the customers to make an account so
+                they can save items to a virtual shopping cart.
+                </br></br>
+            </div>
+
+            <div>
+                <strong>Data Description:</strong></br>
+                <p>Table 1: Product Information</p>
+                <p>This table will be used to store information about all the products. A user can click on one of the
+                    photos and then be taken to a page with more information about the product (like Amazon, you can
+                    browse images then click for more info), which will be retrieved from this table.</p>
+                <p>Fields: primary key = product ID (int), product name (varchar), quantity (int), price (float),
+                    dimensions (varchar), description (varchar), date taken (date)</p>
+                </br></br>
+
+                <p>Table 2: Customer Accounts</p>
+                <p>The site can allow users to create an account so that they can save items to a shopping cart which
+                    will be saved if they leave the site and come back later.</p>
+                <p>Fields: primary key = email (varchar), first and last names (varchar), age (int), birthdate (date),
+                    shopping cart (list of products they are considering buying)</p>
+                </br></br>
+            </div>
+
+            <div>
+                <strong>Functions performed by the app:</strong></br>
+                <ul>
+                    <li>On the gallery page: slideshow of some of the photography (for the header), then an arrangement
+                        of all the available products below. Will also include buttons to sort the images based on
+                        different features (ex. Sort by date or price)</li>
+                    <li>Allow users to add items to their shopping cart (UPDATE to quantity in the database)</li>
+                    <li>Allow users to create and then later update their account details (INSERT and UPDATE in the
+                        database)</li>
+                    <li>When displaying product details, information will be retrieved from the database (SELECT)</li>
+                    <li>The client will be able to add images to the site themself (ie. without programming knowledge)
+                    </li>
+                </ul>
+                </br></br>
+            </div>
+
+            <div>
+                <strong>Role of PHP and JavaScript:</strong>
+                <p>PHP will be used to make SQL commands for updating the database. This will happen when the user
+                    creates an account or wants to update their existing account (ex. changing a name or email address).
+                    JavaScript will be used to update the gallery page when filters are applied. It will also be used
+                    for the account creation for input validation (ex. Check for valid email addresses). When making the
+                    site responsive, JavaScript might also be used for collapsing menus in a mobile layout.</p>
+                </br></br>
+            </div>
+
+            <div>
+                <strong>Roles of Team Members:</strong></br>
+                <ul>
+                    <li>Logan: implement <span class="blue">account feature</span> and feature to allow the client to
+                        add more images</li>
+                    <li>Brian: gallery page + animations/related features</li>
+                    <li>Abigail: store page + related features</li>
+                    <li>Aleina: implement the <span class="blue">shopping cart</span> feature (involving managing the
+                        database)</li>
+                    <li class="blue">Note that each member programmed the relevant JavaScript, PHP, and SQL for their
+                        assigned page</li>
+                </ul>
+                </br></br>
+            </div>
+            <div>
+                <strong>The increments:</strong></br>
+                <p>For the first increment, we set up the site and all the pages that we're going to make. We also began
+                    work on all the basic functionality of the site, adding images and creating a style for the site.
+                    Features implemented in the first increment include:
+                </p>
+                <ul>
+                    <li class="blue">Loading images from the database to the gallery page (PHP & SQL)</li>
+                    <li class="blue">Displaying images and product info from the database (JS/AJAX, PHP & SQL)</li>
+                    <li class="blue">Button to add products from the store to a shopping cart which can be viewed on
+                        another page (JS/AJAX, PHP & SQL)</li>
+                </ul>
+                </br></br>
+            </div>
+
+            <div>
+                <strong>Client feedback:</strong></br>
+                <p>From the feedback we've received so far, our plan meets all the necessary requirements for the
+                    website, and aligns with the project and client's goals. We plan to consult with the client in
+                    more depth after we have prepared the first increment so that we can make any necessary changes that
+                    the client requests.</p>
+                </br></br>
+            </div>
+            <div>
+                <a href="gip.html">Back</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="margin-five">
+            <a href="mailto:fonga13@mcmaster.ca,bijua5@mcmaster.ca,laumclel@mcmaster.ca,nguyeb57@mcmaster.ca">Contact
+                Us</a>
+            <p>&copy; Brick Plug, 2025</p>
+        </div>
+    </div>
+</body>
+
+</html>
