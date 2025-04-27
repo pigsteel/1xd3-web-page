@@ -64,9 +64,9 @@ Development Plan for our project (final delivery)
                 </br>
                 <p>Table 2: Customer Accounts</p>
                 <p>The site can allow users to create an account so that they can save items to a shopping cart which
-                    will be saved if they leave the site and come back later.</p>
-                <p>Fields: primary key = email (varchar), first and last names (varchar), age (int), birthdate (date),
-                    shopping cart (list of products they are considering buying)</p>
+                    will be saved if they leave the site and come back later. <span class="blue">Ended up only implementing admin controls.</span></p>
+                <p>Fields: primary key = id (int), <span class="blue">password 
+                    (varchar), email (varchar), registered (date), admin (tinyInt/boolean)</span></p>
                 </br></br>
             </div>
 
@@ -92,8 +92,7 @@ Development Plan for our project (final delivery)
                         table, and each one has a button allowing the user to remove it from the cart.
                     </li>
                     <li>
-                        Login/Account page: Allow users to create and then later update their account details (INSERT
-                        and UPDATE in the database). There is also an admin login which is to be used by the client,
+                        Login/Account page: Allow users to create their account details (INSERT). There is also an admin login which is to be used by the client,
                         granting them the permissions to add products and images to the site themself (without
                         programming knowledge).
                     </li>
